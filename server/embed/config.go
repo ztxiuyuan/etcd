@@ -567,9 +567,9 @@ func NewConfig() *Config {
 		DistributedTracingAddress:     DefaultDistributedTracingAddress,
 		DistributedTracingServiceName: DefaultDistributedTracingServiceName,
 
-		CompactHashCheckTime: DefaultCompactHashCheckTime,
-
-		V2Deprecation: config.V2DeprDefault,
+		CompactHashCheckTime:        DefaultCompactHashCheckTime,
+		WarningUnaryRequestDuration: DefaultWarningUnaryRequestDuration,
+		V2Deprecation:               config.V2DeprDefault,
 
 		DiscoveryCfg: v3discovery.DiscoveryConfig{
 			ConfigSpec: clientv3.ConfigSpec{
